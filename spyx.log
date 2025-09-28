@@ -1,0 +1,16 @@
+2025-09-28 21:54:46,605 - INFO - Authentication successful.
+2025-09-28 21:54:49,083 - ERROR - Fetch error for https://twitter.com/search?q=SOUL_BEING_HER: 400, message='Got more than 8190 bytes (8995) when reading Header value is too long.', url='https://twitter.com/search?q=SOUL_BEING_HER'
+2025-09-28 21:54:49,137 - ERROR - Fetch error for https://twitter.com/SOUL_BEING_HER: 400, message='Got more than 8190 bytes (9004) when reading Header value is too long.', url='https://twitter.com/SOUL_BEING_HER'
+2025-09-28 21:54:49,700 - ERROR - Fetch error for https://twitter.com/search?q=soul_being_her: 400, message='Got more than 8190 bytes (8995) when reading Header value is too long.', url='https://twitter.com/search?q=soul_being_her'
+2025-09-28 21:54:49,764 - ERROR - Fetch error for https://twitter.com/soul_being_her: 400, message='Got more than 8190 bytes (10460) when reading Header value is too long.', url='https://twitter.com/soul_being_her'
+2025-09-28 21:55:03,759 - INFO - Scan Summary: Total=14 Found=4 Failed=10 Errors=4
+2025-09-28 21:59:25,039 - INFO - Authentication successful.
+2025-09-28 21:59:26,814 - ERROR - Fetch error for https://twitter.com/search?q=mukhtarshaikh: 400, message='Got more than 8190 bytes (10460) when reading Header value is too long.', url='https://twitter.com/search?q=mukhtarshaikh'
+2025-09-28 21:59:27,942 - ERROR - Fetch error for https://twitter.com/search?q=mukhtarshaikh%40gamil.com: 400, message='Got more than 8190 bytes (8985) when reading Header value is too long.', url='https://twitter.com/search?q=mukhtarshaikh@gamil.com'
+2025-09-28 21:59:28,415 - ERROR - Fetch error for https://twitter.com/+923141078313: 400, message='Got more than 8190 bytes (10460) when reading Header value is too long.', url='https://twitter.com/+923141078313'
+2025-09-28 21:59:28,885 - ERROR - Fetch error for https://twitter.com/mukhtarshaikh@gamil.com: 400, message='Got more than 8190 bytes (10460) when reading Header value is too long.', url='https://twitter.com/mukhtarshaikh@gamil.com'
+2025-09-28 21:59:30,797 - ERROR - Fetch error for https://twitter.com/MUKHTARSHAIKH: 400, message='Got more than 8190 bytes (10460) when reading Header value is too long.', url='https://twitter.com/MUKHTARSHAIKH'
+2025-09-28 21:59:31,529 - ERROR - Fetch error for https://twitter.com/search?q=%2B923141078313: 400, message='Got more than 8190 bytes (10460) when reading Header value is too long.', url='https://twitter.com/search?q=%2B923141078313'
+2025-09-28 21:59:34,063 - ERROR - Fetch error for https://twitter.com/mukhtarshaikh: 400, message='Got more than 8190 bytes (10460) when reading Header value is too long.', url='https://twitter.com/mukhtarshaikh'
+2025-09-28 21:59:34,352 - ERROR - Fetch error for https://twitter.com/search?q=MUKHTARSHAIKH: 400, message='Got more than 8190 bytes (8996) when reading Header value is too long.', url='https://twitter.com/search?q=MUKHTARSHAIKH'
+2025-09-28 22:00:43,551 - INFO - Scan Summary: Total=28 Found=8 Failed=20 Errors=8

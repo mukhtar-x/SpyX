@@ -1,0 +1,101 @@
+==================== SpyX - Basics ====================
+
+SpyX is a Python-based asynchronous tool to check whether a username, email, or phone number exists
+across multiple online platforms (social, specific, public). It outputs results in a clean table 
+format using Rich and logs activity to a file.
+
+--------------------------------------------------------
+1) Folder Structure
+--------------------------------------------------------
+SpyX/
+├─ core.py            # Main scanning logic (async checks, token generation)
+├─ cli.py             # Command-line interface entry point
+├─ Json/
+│  ├─ config.json     # Tool configuration (password, concurrency, timeout, user-agent)
+│  └─ sites.json      # Sites and URL patterns categorized
+├─ spyx.log           # Logs all scan activity
+└─ venv/              # Optional Python virtual environment
+
+--------------------------------------------------------
+2) Requirements
+--------------------------------------------------------
+Python >= 3.10
+
+Python packages:
+- aiohttp  : Async HTTP requests
+- rich     : Console output with tables and progress bars
+
+You can install these using pip.
+
+--------------------------------------------------------
+3) Setup / Installation
+--------------------------------------------------------
+1. Create and activate a virtual environment (recommended):
+   Linux/macOS:
+     python -m venv venv
+     source venv/bin/activate
+   Windows:
+     python -m venv venv
+     venv\Scripts\activate
+
+2. Install dependencies via requirements file:
+   Create a `requirements.txt` with:
+       aiohttp
+       rich
+   Then run:
+       pip install -r requirements.txt
+
+3. Ensure the folder structure is preserved:
+   - cli.py
+   - core.py
+   - Json/config.json
+   - Json/sites.json
+
+--------------------------------------------------------
+4) Running SpyX
+--------------------------------------------------------
+Basic syntax:
+    python cli.py BASE [options]
+
+Arguments:
+  BASE                  Base username, name, or email prefix
+
+Options:
+  -d, --domains DOMAIN  Space-separated email domains (e.g., gmail.com yahoo.com)
+  -p, --phone PHONE     Phone number
+  -c, --concurrency N   Number of concurrent requests (default: 20)
+  -t, --timeout N       HTTP timeout in seconds (default: 10)
+
+Example:
+    python cli.py john_doe -d gmail.com yahoo.com -p +123456789 -c 30 -t 15
+
+--------------------------------------------------------
+5) Features
+--------------------------------------------------------
+- Checks usernames, emails, and phone numbers across social, specific, and public sites
+- Asynchronous scanning with concurrency control
+- Rich console output with progress and table formatting
+- Logs all activity and errors in spyx.log
+- Password-protected CLI usage for security
+- Supports custom site patterns (via Json/sites.json)
+
+--------------------------------------------------------
+6) Limitations / Notes
+--------------------------------------------------------
+- Domains are optional; emails are generated only if provided
+- Phone number checks are basic and only use the provided number
+- Some sites may block scanning or rate-limit requests
+- Only basic existence detection; no scraping of private info
+- Password is stored in plaintext in config.json (consider hashing for better security)
+- Requires internet access for live scanning
+- Tool should be used ethically and legally
+
+--------------------------------------------------------
+7) Summary
+--------------------------------------------------------
+SpyX is a fast, extensible tool to check token existence online using async requests and
+Rich tables. After setting up the virtual environment and installing dependencies, use
+`cli.py` with your base tokens and optional domains/phone numbers. Results are displayed
+in the console and logged for review.
+
+========================================================

@@ -1,0 +1,33 @@
+{
+  "social": {
+    "Twitter": [
+      "https://twitter.com/{}",
+      "https://twitter.com/search?q={}"
+    ],
+    "Instagram": [
+      "https://www.instagram.com/{}"
+    ],
+    "YouTube": [
+      "https://www.youtube.com/@{}",
+      "https://www.youtube.com/results?search_query={}"
+    ]
+  },
+  "specific": {
+    "GitHub": [
+      "https://github.com/{}"
+    ],
+    "Reddit": [
+      "https://www.reddit.com/user/{}"
+    ]
+  },
+  "public": {
+    "StackOverflow": [
+      "https://stackoverflow.com/users/{}",
+      "https://stackoverflow.com/search?q={}"
+    ],
+    "LinkedIn": [
+      "https://www.linkedin.com/in/{}",
+      "https://www.linkedin.com/search/results/all/?keywords={}"
+    ]
+  }
+}
