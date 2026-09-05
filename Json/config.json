@@ -1,0 +1,5 @@
+{
+    "user_agent": "SpyX/2.0",
+    "concurrency": 20,
+    "timeout": 10
+}

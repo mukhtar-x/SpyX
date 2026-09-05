@@ -1,7 +1,7 @@
 # cli.py
 import argparse
 import asyncio
-from core import check   # <-- change run_check -> check
+from core import check
 
 def main():
     parser = argparse.ArgumentParser(description="SherlockX - Improved Username/Email/Phone checker (limited variants)")

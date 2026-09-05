@@ -14,6 +14,7 @@ from rich.text import Text
 import getpass
 import sys
 import logging
+import os
 
 console = Console()
 
@@ -25,12 +26,7 @@ if CONFIG_PATH.exists():
     with open(CONFIG_PATH, "r", encoding="utf-8") as f:
         CONFIG = json.load(f)
 else:
-    CONFIG = {
-        "password": "nooneknows",
-        "user_agent": "SpyX/2.0",
-        "concurrency": 20,
-        "timeout": 10
-    }
+    CONFIG = {"user_agent": "SpyX/2.0", "concurrency": 20, "timeout": 10}
 
 # -------------------------
 # Logging
@@ -47,7 +43,8 @@ logging.basicConfig(
 # -------------------------
 def authenticate():
     entered = getpass.getpass("Enter SpyX password: ")
-    if entered.strip() != CONFIG.get("password", "nooneknows"):
+    expected = os.environ.get("SPYX_PASSWORD")
+    if not expected or entered.strip() != expected:
         console.print("Authentication failed. Exiting.", style="bold red")
         logging.warning("Authentication failed.")
         sys.exit(1)
